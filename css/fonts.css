@@ -1,14 +1,14 @@
 @font-face {
     font-family: ClearSans-Bold;
-    src: url(/fonts/ClearSans-Bold.ttf);
+    src: url(../fonts/ClearSans-Bold.ttf);
 }
 
 @font-face {
     font-family: ClearSans-Regular;
-    src: url(/fonts/ClearSans-Regular.ttf);
+    src: url(../fonts/ClearSans-Regular.ttf);
 }
 
 @font-face {
     font-family: pe-icon-social;
-    src: url(/fonts/pe-icon-social.ttf);
+    src: url(../fonts/pe-icon-social.ttf);
 }
