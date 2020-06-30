@@ -28,6 +28,7 @@
 .logo{
     padding-top: 10px;
     padding-bottom: 10px;
+
 }
 .logo__subtitle{
     color: #1d1d1b;
@@ -293,7 +294,7 @@ article{
         position: absolute; 
         width: 0; 
         height: 0; 
-        left: 27.7%;
+        left: 21.7%;
         top: 100%;
         border: 12px solid; 
         border-color: @speechBorderColor transparent transparent @speechBorderColor; 
@@ -303,7 +304,7 @@ article{
         position: absolute; 
         width: 0; 
         height: 0; 
-        left: 27.9%;
+        left: 22%;
         top: 100%;
         border: 11.1px solid; 
         border-color: #fff transparent transparent #fff; 
@@ -326,7 +327,6 @@ article{
 .speech-block__info{
     display: flex;
     justify-content: left;
-    margin-bottom: 15px;
 }
 
 .speech-info{
@@ -341,7 +341,7 @@ article{
     & span{
         text-transform: uppercase;
     }
-    margin-bottom: 9px;
+    margin-bottom: 3px;
 }
 
 .speech-info__subtitle{
@@ -354,6 +354,7 @@ article{
 .speech-block__title{
     color: #8a9eb1;
     line-height: 1.2;
+    margin-top: 15px;
     font-size: 14px;
     font-family: @clearRegular, sans-serif;
 }
@@ -703,24 +704,15 @@ footer{
     justify-content: space-between;
 
     & .speech-info{
-        position: relative;
-        padding-right: 39px;
-        &::after{
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            display: block;
-            width: 1px;
-            height: 100%;
-            background-color: #1d1d1b;
-        }
+        width: 167px;
     }
 
     & .speech-block__title p{
-        width: 294px;
+        width: 278px;
+        border-left: 1px solid #1d1d1b;
         border-right: 1px solid #1d1d1b;
-        padding-right: 22px;
+        padding-left: 33px;
+        padding-right: 23px;
         line-height: 1.3;
     }
 }
@@ -730,6 +722,7 @@ footer{
     font-size: 14px;
     font-family: @clearRegular, sans-serif;
     margin-right: 38px;
+    margin-left: 10px;
     & span{
         padding-right: 10px;
         position: relative;
@@ -738,7 +731,7 @@ footer{
             position: absolute;
             font-weight: 600;
             font-size: 10px;
-            bottom: 5px;
+            bottom: 2px;
             right: 0px;
             color: #1d1d1b;
         }
@@ -757,6 +750,16 @@ footer{
     & .speech-block{
         margin-bottom: 50px;
     }
+
+    & .speech{
+        &::before{
+            left: 6.7%;
+        }
+
+        &::after{
+            left: 6.8%;
+        }
+    }
 }
 
 .speech-block__wrapper{
@@ -774,5 +777,7 @@ footer{
 
     & .speech-block__interview{
         margin-top: 30px;
+        margin-right: unset;
+        margin-left: unset;
     }
 }
