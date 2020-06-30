@@ -635,6 +635,6 @@ footer {
 }
 .speech-block__wrapper .speech-block__interview {
   margin-top: 30px;
-  margin-right: unset;
-  margin-left: unset;
+  margin-right: 0;
+  margin-left: 0;
 }
