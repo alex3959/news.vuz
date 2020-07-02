@@ -654,7 +654,7 @@ footer {
 }
 .history-filters__menu a {
   display: block;
-  padding: 6px 10px;
+  padding: 2px 10px 6px;
   color: #61646a;
   border-radius: 5px;
   background-color: #f0f2f8;
@@ -679,4 +679,57 @@ footer {
   color: #1d1d1b;
   font-size: 21px;
   font-family: 'ClearSans-Bold', sans-serif;
+}
+.history-text {
+  color: #1d1d1b;
+  margin-top: 28px;
+  font-size: 18px;
+  font-family: 'ClearSans-Regular', sans-serif;
+}
+.history-text a {
+  color: #336699;
+}
+.history-text.reference {
+  margin-top: 0;
+  padding: 20px 21px;
+  background-color: #f0f2f8;
+}
+.history-text.speeches {
+  padding-left: 30px;
+  font-size: 24px;
+  font-style: italic;
+  font-family: 'ClearSans-Regular', sans-serif;
+}
+.history-reference__title {
+  color: #be1522;
+  padding-top: 27px;
+  padding-bottom: 12px;
+  font-size: 24px;
+  font-family: 'ClearSans-Bold', sans-serif;
+}
+.history-source {
+  padding-top: 31px;
+}
+.history-source span {
+  color: #be1522;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'ClearSans-Bold', sans-serif;
+  margin-right: 3px;
+}
+.history-source a {
+  color: #656565;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: 'ClearSans-Regular', sans-serif;
+}
+.history-source a:hover {
+  text-decoration: underline;
+}
+.history-share {
+  color: #656565;
+  font-size: 14px;
+  font-family: 'ClearSans-Regular', sans-serif;
+  padding-top: 30px;
+  padding-bottom: 13px;
 }
