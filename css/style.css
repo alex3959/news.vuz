@@ -863,3 +863,6 @@ footer {
 .history-aside_style .news-block:last-child {
   border-bottom: none;
 }
+.article-page_style .news-title__date {
+  padding-left: 0;
+}
