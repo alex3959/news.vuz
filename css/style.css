@@ -157,6 +157,10 @@
   color: #ffffff !important;
   background-color: #be1522;
 }
+.active-menu:hover {
+  -webkit-box-shadow: 0 0 5px #2d0000;
+          box-shadow: 0 0 5px #2d0000;
+}
 .news-content__title {
   padding-top: 34px;
   padding-bottom: 34px;
