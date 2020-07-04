@@ -913,7 +913,7 @@ footer{
 
 .icon-shadow{
     &:hover{
-        box-shadow: 0 0 7px #8a9eb1;
+        box-shadow: 0 0 4px #cccccc;;
     }
 }
 
@@ -956,7 +956,7 @@ footer{
 .search-block__input{
     & .search{
         width: 423px;
-        padding: 9px 20px 9px 9px;
+        padding: 8px 20px 9px 9px;
         border: 1px solid #c8d5dd;
         // color: #1d1d1b;
         color: #8a9eb1;
@@ -988,4 +988,61 @@ footer{
             height: 17px;        
         }
     }
+}
+
+.search-block__filters{
+    background-color: #f0f2f8;
+    padding: 25px 10px;
+    margin-top: 32px;
+    margin-bottom: 29px;
+}
+
+.select-item__wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-filters__item{
+    & h1{
+        margin-bottom: 9px;
+        color: #1a1a1a;
+        font-size: 16px;
+        font-family: @clearRegular, sans-serif;
+    }
+
+    &:last-child{
+        margin-right: 81px;
+    }
+}
+
+.search-filter__select{
+    border: 1px solid #c8d5dd;
+    padding: 3px 9px 5px;
+    color: #8a9eb1;
+    font-size: 14px;
+    font-family: @clearRegular, sans-serif;
+}
+
+.date-style_padding{
+    margin-top: 12px;
+    & h1{
+        margin-left: 15px;
+    }
+}
+
+.date__item{
+    & span{
+        &:first-child{
+            margin-left: 0;
+        }
+        margin-left: 15px;
+        margin-right: 6px;
+        color: #1a1a1a;
+        font-size: 16px;
+        font-family: @clearRegular, sans-serif;
+    }
+}
+
+.date-style{
+    width: 130px;
 }

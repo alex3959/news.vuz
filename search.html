@@ -54,11 +54,62 @@
                 <input class="search-button" type="image" src="images/search-button.png">
             </div>
             <div class="search-block__filters">
-                <div class="search-filters__item">
-                <h1>Жанры</h1>
-                <select>
-                    <option>Все материалы...</option>
-                </select>
+                <div class="select-item__wrap">
+                    <div class="search-filters__item">
+                        <h1>Жанры</h1>
+                        <select class="search-filter__select">
+                            <option value="all" selected>Все материалы...</option>
+                            <option value="1">Факультет</option>
+                            <option value="2">Спорт</option>
+                            <option value="3">Ректорат</option>
+                            <option value="4">Конференция</option>
+                            <option value="5">Студенты</option>
+                        </select>
+                    </div>
+
+                    <div class="search-filters__item">
+                        <h1>Рубрики</h1>
+                        <select class="search-filter__select">
+                            <option value="all" selected>Все рубрики...</option>
+                            <option value="1">Факультет</option>
+                            <option value="2">Спорт</option>
+                            <option value="3">Ректорат</option>
+                            <option value="4">Конференция</option>
+                            <option value="5">Студенты</option>
+                        </select>
+                    </div>
+
+                    <div class="search-filters__item">
+                        <h1>Тэги</h1>
+                        <select class="search-filter__select">
+                            <option value="all" selected>Все тэги...</option>
+                            <option value="1">Факультет</option>
+                            <option value="2">Спорт</option>
+                            <option value="3">Ректорат</option>
+                            <option value="4">Конференция</option>
+                            <option value="5">Студенты</option>
+                        </select>
+                    </div>
+
+                    <div class="search-filters__item">
+                        <h1>Персоны</h1>
+                        <select class="search-filter__select">
+                            <option value="all" selected>Все персоны...</option>
+                            <option value="1">Факультет</option>
+                            <option value="2">Спорт</option>
+                            <option value="3">Ректорат</option>
+                            <option value="4">Конференция</option>
+                            <option value="5">Студенты</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="search-filters__item date-style_padding">
+                    <h1>Даты</h1>
+                    <div class="date__item">
+                        <span>С</span><input class="search-filter__select date-style" type="date" name="calendar" value="2020-07-04">
+                        <span>До</span><input class="search-filter__select date-style" type="date" name="calendar" value="2020-07-11">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
