@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
@@ -9,161 +10,167 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Vuznews</title>
 </head>
+
 <body>
-    
-<header>
-    <div class="header-logo-wrap">
-        <div class="container">
-            <div class="logo-wrap">
-                <div class="logo__inner">
-                    <div class="logo__title">10 апреля 2016, четверг, 12:24</div>
-                    <div class="logo"><a href="#"><img src="images/logo-shapka-02.svg" alt="header-logo" width="375px" height="35px"></a></div>
-                    <div class="logo__subtitle">Портал высшей школы России</div>
-                </div>
-                <div class="logo__links">
-                    <a href="#" class="logo-links__rss"><i class="pe-so-rss"></i></a>
-                    <a href="#" class="header-archive__button"><i class="archive-button"></i>Архив</a>
-                    <a href="search.html" class="header-search__button"><i class="search-button"></i></a>
-                    <a href="#" class="logo-links__facebook"><i class="pe-so-facebook"></i></a>
-                    <a href="#" class="logo-links__vk"><i class="pe-so-vk"></i></a>
+
+    <header>
+        <div class="header-logo-wrap">
+            <div class="container">
+                <div class="logo-wrap">
+                    <div class="logo__inner">
+                        <div class="logo__title">10 апреля 2016, четверг, 12:24</div>
+                        <div class="logo"><a href="#"><img src="images/logo-shapka-02.svg" alt="header-logo"
+                                    width="375px" height="35px"></a></div>
+                        <div class="logo__subtitle">Портал высшей школы России</div>
+                    </div>
+                    <div class="logo__links">
+                        <a href="#" class="logo-links__rss"><i class="pe-so-rss"></i></a>
+                        <a href="#" class="header-archive__button"><i class="archive-button"></i>Архив</a>
+                        <a href="search.html" class="header-search__button"><i class="search-button"></i></a>
+                        <a href="#" class="logo-links__facebook"><i class="pe-so-facebook"></i></a>
+                        <a href="#" class="logo-links__vk"><i class="pe-so-vk"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div class="header-nav-wrap">
-        <div class="container">
-            <ul class="header-nav">
-                <li><a href="index.html" class="nav-menu">новости</a></li>
-                <li><a href="speech.html" class="nav-menu">мнения</a></li>
-                <li><a href="history.html" class="nav-menu">истории и люди</a></li>
-                <li><a href="article.html" class="nav-menu">статьи</a></li>
-            </ul>
+
+        <div class="header-nav-wrap">
+            <div class="container">
+                <ul class="header-nav">
+                    <li><a href="index.html" class="nav-menu">новости</a></li>
+                    <li><a href="speech.html" class="nav-menu">мнения</a></li>
+                    <li><a href="history.html" class="nav-menu">истории и люди</a></li>
+                    <li><a href="article.html" class="nav-menu">статьи</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 
-<div class="content">
-    <div class="container">
-        <div class="page-reference"><span><a href="#">Главная</a></span><span><a href="#">поиск</a></span></div>
-        <div class="news-content__title">поиск</div>
+    <div class="content">
+        <div class="container">
+            <div class="page-reference"><span><a href="#">Главная</a></span><span><a href="#">поиск</a></span></div>
+            <div class="news-content__title">поиск</div>
 
-        <div class="search-block">
-            <div class="search-block__input">
-                <input class="search" type="search" placeholder="Введите поисковой запрос">
-                <input class="search-button" type="image" src="images/search-button.png">
-            </div>
-            <div class="search-block__filters">
-                <div class="select-item__wrap">
-                    <div class="search-filters__item">
-                        <h1>Жанры</h1>
-                        <select class="search-filter__select">
-                            <option value="all" selected>Все материалы...</option>
-                            <option value="1">Факультет</option>
-                            <option value="2">Спорт</option>
-                            <option value="3">Ректорат</option>
-                            <option value="4">Конференция</option>
-                            <option value="5">Студенты</option>
-                        </select>
+            <div class="search-block">
+                <div class="search-block__input">
+                    <input class="search" type="search" placeholder="Введите поисковой запрос">
+                    <input class="search-button" type="image" src="images/search-button.png">
+                </div>
+                <div class="search-block__filters">
+                    <div class="select-item__wrap">
+                        <div class="search-filters__item">
+                            <h1>Жанры</h1>
+                            <select class="search-filter__select">
+                                <option value="all" selected>Все материалы...</option>
+                                <option value="1">Факультет</option>
+                                <option value="2">Спорт</option>
+                                <option value="3">Ректорат</option>
+                                <option value="4">Конференция</option>
+                                <option value="5">Студенты</option>
+                            </select>
+                        </div>
+
+                        <div class="search-filters__item">
+                            <h1>Рубрики</h1>
+                            <select class="search-filter__select">
+                                <option value="all" selected>Все рубрики...</option>
+                                <option value="1">Факультет</option>
+                                <option value="2">Спорт</option>
+                                <option value="3">Ректорат</option>
+                                <option value="4">Конференция</option>
+                                <option value="5">Студенты</option>
+                            </select>
+                        </div>
+
+                        <div class="search-filters__item">
+                            <h1>Тэги</h1>
+                            <select class="search-filter__select">
+                                <option value="all" selected>Все тэги...</option>
+                                <option value="1">Факультет</option>
+                                <option value="2">Спорт</option>
+                                <option value="3">Ректорат</option>
+                                <option value="4">Конференция</option>
+                                <option value="5">Студенты</option>
+                            </select>
+                        </div>
+
+                        <div class="search-filters__item">
+                            <h1>Персоны</h1>
+                            <select class="search-filter__select">
+                                <option value="all" selected>Все персоны...</option>
+                                <option value="1">Факультет</option>
+                                <option value="2">Спорт</option>
+                                <option value="3">Ректорат</option>
+                                <option value="4">Конференция</option>
+                                <option value="5">Студенты</option>
+                            </select>
+                        </div>
                     </div>
-
-                    <div class="search-filters__item">
-                        <h1>Рубрики</h1>
-                        <select class="search-filter__select">
-                            <option value="all" selected>Все рубрики...</option>
-                            <option value="1">Факультет</option>
-                            <option value="2">Спорт</option>
-                            <option value="3">Ректорат</option>
-                            <option value="4">Конференция</option>
-                            <option value="5">Студенты</option>
-                        </select>
-                    </div>
-
-                    <div class="search-filters__item">
-                        <h1>Тэги</h1>
-                        <select class="search-filter__select">
-                            <option value="all" selected>Все тэги...</option>
-                            <option value="1">Факультет</option>
-                            <option value="2">Спорт</option>
-                            <option value="3">Ректорат</option>
-                            <option value="4">Конференция</option>
-                            <option value="5">Студенты</option>
-                        </select>
-                    </div>
-
-                    <div class="search-filters__item">
-                        <h1>Персоны</h1>
-                        <select class="search-filter__select">
-                            <option value="all" selected>Все персоны...</option>
-                            <option value="1">Факультет</option>
-                            <option value="2">Спорт</option>
-                            <option value="3">Ректорат</option>
-                            <option value="4">Конференция</option>
-                            <option value="5">Студенты</option>
-                        </select>
+                    <div class="search-filters__item date-style_padding">
+                        <h1>Даты</h1>
+                        <div class="date__item">
+                            <span>С</span><input class="search-filter__select date-style" type="date" name="calendar"
+                                value="2020-07-04">
+                            <span>До</span><input class="search-filter__select date-style" type="date" name="calendar"
+                                value="2020-07-11">
+                        </div>
                     </div>
                 </div>
-                <div class="search-filters__item date-style_padding">
-                    <h1>Даты</h1>
-                    <div class="date__item">
-                        <span>С</span><input class="search-filter__select date-style" type="date" name="calendar" value="2020-07-04">
-                        <span>До</span><input class="search-filter__select date-style" type="date" name="calendar" value="2020-07-11">
-                    </div>
-                </div>
-            </div>
 
-            <div class="search-block__expanded-search">
-                <span>Расширенный поиск</span>
-                <div class="expanded-button__item">
-                    <input type="checkbox">точное совпадение<br>
+                <div class="search-block__expanded-search">
+                    <span>Расширенный поиск</span>
+                    <div class="expanded-button__item">
+                        <input type="checkbox">
+                    </div>
                     <input type="button">
                     <input type="button">
                 </div>
             </div>
         </div>
+
     </div>
-    
-</div>
 
 
-<footer>
-    <div class="container">
-        <div class="footer-block-wrap">
-            <div class="footer-logo-links">
-                <div class="footer__logo"><a href="#"><img src="images/logo-footer2.svg" alt="logo-footer"></a></div>
-                <div class="footer-logo__title">Нашли опечатку?
-                <span>CTRL+ENTER</span></div>
-                <div class="footer__social-links">
-                    <a href="#" class="logo-links__facebook"><i class="pe-so-facebook"></i></a>
-                    <a href="#" class="logo-links__vk"><i class="pe-so-vk"></i></a>
+    <footer>
+        <div class="container">
+            <div class="footer-block-wrap">
+                <div class="footer-logo-links">
+                    <div class="footer__logo"><a href="#"><img src="images/logo-footer2.svg" alt="logo-footer"></a>
+                    </div>
+                    <div class="footer-logo__title">Нашли опечатку?
+                        <span>CTRL+ENTER</span></div>
+                    <div class="footer__social-links">
+                        <a href="#" class="logo-links__facebook"><i class="pe-so-facebook"></i></a>
+                        <a href="#" class="logo-links__vk"><i class="pe-so-vk"></i></a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="footer__support-block">
-                <div class="footer__menu">
-                    <ul>
-                        <li><a href="#">О проекте</a></li>
-                        <li><a href="#">Контакты</a></li>
-                        <li><a href="#">Партнеры</a></li>
-                        <li><a href="#">RSS</a></li>
-                        <li><a href="#">Правила использования информации</a></li>
-                    </ul>
+                <div class="footer__support-block">
+                    <div class="footer__menu">
+                        <ul>
+                            <li><a href="#">О проекте</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Партнеры</a></li>
+                            <li><a href="#">RSS</a></li>
+                            <li><a href="#">Правила использования информации</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__supports">
+                        <span>При поддержке:</span>
+                        <ul>
+                            <li><a href="#"><img src="images/footer-support-img.png" alt="support-img"></a></li>
+                            <li><a href="#"><img src="images/footer-support-img2.png" alt="support-img"></a></li>
+                            <li><a href="#"><img src="images/footer-support-img3.png" alt="support-img"></a></li>
+                            <li><a href="#"><img src="images/footer-support-img4.png" alt="support-img"></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__title">Категория информации<span>18+</span></div>
                 </div>
-                <div class="footer__supports">
-                <span>При поддержке:</span>
-                    <ul>
-                        <li><a href="#"><img src="images/footer-support-img.png" alt="support-img"></a></li>
-                        <li><a href="#"><img src="images/footer-support-img2.png" alt="support-img"></a></li>
-                        <li><a href="#"><img src="images/footer-support-img3.png" alt="support-img"></a></li>
-                        <li><a href="#"><img src="images/footer-support-img4.png" alt="support-img"></a></li>
-                    </ul>
-                </div>
-                <div class="footer__title">Категория информации<span>18+</span></div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<script src="js/js.js"></script>
+    <script src="js/js.js"></script>
 </body>
+
 </html>
