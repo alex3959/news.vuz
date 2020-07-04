@@ -954,16 +954,38 @@ footer{
 // search page
 
 .search-block__input{
-    & input{
-        width: 438px;
-        padding: 9px;
+    & .search{
+        width: 423px;
+        padding: 9px 20px 9px 9px;
         border: 1px solid #c8d5dd;
-        color: #1d1d1b;
+        // color: #1d1d1b;
+        color: #8a9eb1;
         font-family: @clearRegular, sans-serif;
         &::placeholder{
             font-size: 16px;
             font-family: @clearRegular, sans-serif;
             color: #8a9eb1;
+        }
+    }
+}
+
+.search-block__input{
+    width: 454px;
+    position: relative;
+    & .search-button{
+        width: 16px;
+        height: 17px;
+        position: absolute;
+        right: 6px;
+        top: 13px;
+
+        &:hover{
+           width: 17px;
+           height: 18px;
+        }
+        &:active{
+            width: 16px;
+            height: 17px;        
         }
     }
 }

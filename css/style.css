@@ -870,30 +870,49 @@ footer {
 .article-page_style .news-title__date {
   padding-left: 0;
 }
-.search-block__input input {
-  width: 438px;
-  padding: 9px;
+.search-block__input .search {
+  width: 423px;
+  padding: 9px 20px 9px 9px;
   border: 1px solid #c8d5dd;
-  color: #1d1d1b;
+  color: #8a9eb1;
   font-family: 'ClearSans-Regular', sans-serif;
 }
-.search-block__input input::-webkit-input-placeholder {
+.search-block__input .search::-webkit-input-placeholder {
   font-size: 16px;
   font-family: 'ClearSans-Regular', sans-serif;
   color: #8a9eb1;
 }
-.search-block__input input:-ms-input-placeholder {
+.search-block__input .search:-ms-input-placeholder {
   font-size: 16px;
   font-family: 'ClearSans-Regular', sans-serif;
   color: #8a9eb1;
 }
-.search-block__input input::-ms-input-placeholder {
+.search-block__input .search::-ms-input-placeholder {
   font-size: 16px;
   font-family: 'ClearSans-Regular', sans-serif;
   color: #8a9eb1;
 }
-.search-block__input input::placeholder {
+.search-block__input .search::placeholder {
   font-size: 16px;
   font-family: 'ClearSans-Regular', sans-serif;
   color: #8a9eb1;
+}
+.search-block__input {
+  width: 454px;
+  position: relative;
+}
+.search-block__input .search-button {
+  width: 16px;
+  height: 17px;
+  position: absolute;
+  right: 6px;
+  top: 13px;
+}
+.search-block__input .search-button:hover {
+  width: 17px;
+  height: 18px;
+}
+.search-block__input .search-button:active {
+  width: 16px;
+  height: 17px;
 }
