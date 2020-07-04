@@ -972,6 +972,7 @@ footer {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+  background-color: gray;
 }
 .search-block__expanded-search span:first-child {
   margin-top: 9px;
