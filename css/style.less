@@ -1103,10 +1103,52 @@ footer {
 }
 
 .search-block__expanded-search {
+    display        : flex;
+    justify-content: left;
+
     & span {
-        color        : #1a1a1a;
-        font-size    : 18px;
-        font-family  : @clearRegular, sans-serif;
-        border-bottom: 1px dashed #1d1d1b;
+        &:first-child {
+            color        : #1a1a1a;
+            font-size    : 18px;
+            font-family  : @clearRegular, sans-serif;
+            border-bottom: 1px dashed #1d1d1b;
+        }
+    }
+
+    & .found-btn {
+        font-size       : 16px;
+        font-family     : @clearRegular, sans-serif;
+        margin-left     : 18px;
+        color           : #ffffff;
+        background-color: #be1522;
+        border          : none;
+        padding         : 9px 30px 10px 45px;
+        border-radius   : @borderRadius;
+    }
+
+    & .reset-btn {
+        font-size  : 16px;
+        font-family: @clearRegular, sans-serif;
+        margin-left: 20px;
+    }
+}
+
+.expanded-button__item {
+    line-height: 1.1;
+    margin-left: 48px;
+    position   : relative;
+
+    & input {
+        position: absolute;
+        width   : 18px;
+        height  : 17px;
+        top     : 1px;
+        left    : -26px;
+    }
+
+    & span {
+        color      : #336699;
+        font-size  : 14px;
+        font-family: @clearRegular, sans-serif;
     }
 }
