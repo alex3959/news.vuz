@@ -965,3 +965,9 @@ footer {
 .date-style {
   width: 130px;
 }
+.search-block__expanded-search span {
+  color: #1a1a1a;
+  font-size: 18px;
+  font-family: 'ClearSans-Regular', sans-serif;
+  border-bottom: 1px dashed #1d1d1b;
+}
