@@ -974,10 +974,10 @@ footer {
           justify-content: left;
 }
 .search-block__expanded-search span:first-child {
+  margin-top: 9px;
   color: #1a1a1a;
   font-size: 18px;
   font-family: 'ClearSans-Regular', sans-serif;
-  border-bottom: 1px dashed #1d1d1b;
 }
 .search-block__expanded-search .found-btn {
   font-size: 16px;
@@ -989,15 +989,21 @@ footer {
   padding: 9px 30px 10px 45px;
   border-radius: 5px;
 }
+.search-block__expanded-search .found-btn::before {
+  content: url(../images/found-btn.png);
+  width: 16px;
+  height: 17px;
+  display: block;
+}
 .search-block__expanded-search .reset-btn {
   font-size: 16px;
   font-family: 'ClearSans-Regular', sans-serif;
   margin-left: 20px;
 }
 .expanded-button__item {
-  line-height: 1.1;
   margin-left: 48px;
   position: relative;
+  margin-top: 9px;
 }
 .expanded-button__item input {
   position: absolute;

@@ -1108,10 +1108,10 @@ footer {
 
     & span {
         &:first-child {
+            margin-top: 9px;
             color        : #1a1a1a;
             font-size    : 18px;
             font-family  : @clearRegular, sans-serif;
-            border-bottom: 1px dashed #1d1d1b;
         }
     }
 
@@ -1124,6 +1124,13 @@ footer {
         border          : none;
         padding         : 9px 30px 10px 45px;
         border-radius   : @borderRadius;
+
+        &::before{
+            content: url(../images/found-btn.png);
+            width: 16px;
+            height: 17px;
+            display: block;
+        }
     }
 
     & .reset-btn {
@@ -1134,10 +1141,9 @@ footer {
 }
 
 .expanded-button__item {
-    line-height: 1.1;
     margin-left: 48px;
     position   : relative;
-
+    margin-top: 9px;
     & input {
         position: absolute;
         width   : 18px;
