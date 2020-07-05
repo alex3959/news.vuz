@@ -990,7 +990,7 @@ footer {
   padding: 9px 30px 10px 45px;
   border-radius: 5px;
 }
-.search-block__expanded-search .found-btn::before {
+.search-block__expanded-search .found-btn:before {
   content: url(../images/found-btn.png);
   width: 16px;
   height: 17px;
