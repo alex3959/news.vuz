@@ -106,6 +106,7 @@
                             </select>
                         </div>
                     </div>
+
                     <div class="search-filters__item date-style_padding">
                         <h1>Даты</h1>
                         <div class="date__item">
@@ -116,14 +117,138 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="search-block__expanded-search">
-                    <span>Расширенный поиск</span>
-                    <div class="expanded-button__item">
-                        <input type="checkbox"><span>точное совпадение</span>
+                <div class="search-block__expand">
+                    <span class="expand-title">Расширенный поиск</span>
+                    <div class="expand-checkbox">
+                        <input type="checkbox" class="checkbox">
+                        <span>точное совпадение</span>
                     </div>
-                    <input type="button" class="found-btn" value="Найти">
-                    <input type="button" class="reset-btn" value="Сбросить настройки">
+                    <button class="found-btn">Найти</button>
+                    <button class="reset-btn">Сбросить настройки</button>
+                </div>
+
+                <div class="search-result__block">
+                    <h1>Найдено<span class="result-title_red"><span class="found-count">155</span>результатов</span>
+                    </h1>
+                    <div class="block__result_sort">
+                        <span class="block-result-sort__title">Сортировать по:</span>
+                        <span class="found-type">релевантности</span>
+                        <select>
+                            <option>по дате</option>
+                            <option>Сегодня</option>
+                            <option>Вчера</option>
+                            <option>За месяц</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-container">
+
+                <div class="news-item__block horizontal-style">
+                    <div class="news-block">
+                        <div class="news-block__image"><img src="images/news-image.png" alt="news-image" width="292px"
+                                height="195px"></div>
+
+                        <div class="news-block__info_right">
+                            <div class="news-block__title">
+                                <div class="news-title__category">новости</div>
+                                <div class="news-title__category">инновации</div>
+                                <div class="news-title__date">14:27</div>
+                            </div>
+                            <div class="news-block__text"><a href="#">Российские вузы вошли в число лучших среди стран
+                                    БРИКС и развивающихся экономик</a></div>
+                            <div class="news-item__text">Подписи под документом поставили ректор ТПУ Пётр Чубик и
+                                председатель Дальневосточного отделения Российской академии наук Валентин Сергиенко.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="news-item__block horizontal-style">
+                    <div class="news-block">
+                        <div class="news-block__image">
+                            <div class="video-block__video">
+                                <video width="292" height="195" controls poster="images/video1.png">
+                                    <source src="video/mov_bbb.mp4" type="video/mp4">
+                                    <source src="video/mov_bbb.ogg" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+
+                        <div class="news-block__info_right">
+                            <div class="news-block__title">
+                                <div class="news-title__category">видео</div>
+                                <div class="news-title__date">14:35</div>
+                            </div>
+                            <div class="news-block__text"><a href="#">Молодой ученый ТПУ работает над созданием нового
+                                    метода борьбы с вирусом гриппа H1N1</a></div>
+                            <div class="news-item__text">Подписи под документом поставили ректор ТПУ Пётр Чубик и
+                                председатель Дальневосточного отделения Российской академии наук Валентин Сергиенко.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="news-item__block horizontal-style">
+                    <div class="news-block">
+                        <div class="news-block__image"><img src="images/news-image5.png" alt="news-image" width="292px"
+                                height="195px"></div>
+
+                        <div class="news-block__info_right">
+                            <div class="news-block__title">
+                                <div class="news-title__category">статьи</div>
+                                <div class="news-title__date">11:00</div>
+                            </div>
+                            <div class="news-block__text"><a href="#">ВШЭ: «Несамостоятельный выбор специальности часто
+                                    приводит к „аллергии“ на учебу, а затем — к отчислению»</a></div>
+                            <div class="news-item__text"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="news-item__block horizontal-style">
+                    <div class="news-block">
+                        <div class="news-block__image"><img src="images/news-image2.png" alt="news-image" width="292px"
+                                height="195px"></div>
+
+                        <div class="news-block__info_right">
+                            <div class="news-block__title">
+                                <div class="news-title__category">новости</div>
+                                <div class="news-title__category">в мире</div>
+                                <div class="news-title__date">17:45</div>
+                            </div>
+                            <div class="news-block__text"><a href="#">В ТГУ разрабатывают новый способ лечения аутизма и
+                                    нарушений памяти</a></div>
+                            <div class="news-item__text">Подписи под документом поставили ректор ТПУ Пётр Чубик и
+                                председатель Дальневосточного отделения Российской академии наук Валентин Сергиенко.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="news-item__block horizontal-style">
+                    <div class="news-block">
+                        <div class="news-block__image"><img src="images/news-image6.png" alt="news-image" width="292px"
+                                height="195px"></div>
+
+                        <div class="news-block__info_right">
+                            <div class="news-block__title">
+                                <div class="news-title__category">ИСТОРИИ</div>
+                                <div class="news-title__date">15:00</div>
+                            </div>
+                            <div class="news-block__text"><a href="#">Преподавателя Иркутского государственного
+                                    университета уволили за «недостаточно патриотичные взгляды»</a></div>
+                            <div class="news-item__text">Подписи под документом поставили ректор ТПУ Пётр Чубик и
+                                председатель Дальневосточного отделения Российской академии наук Валентин Сергиенко.
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
