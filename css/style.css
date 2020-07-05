@@ -1108,6 +1108,9 @@ footer {
   margin-top: 20px;
   margin-bottom: 22px;
 }
+.horizontal-style .news-block__image video {
+  max-width: none;
+}
 .horizontal-style .news-block__info_right {
   margin-left: 30px;
 }
