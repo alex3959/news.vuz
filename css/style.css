@@ -1137,3 +1137,110 @@ footer {
 .news-container {
   padding-bottom: 26px;
 }
+.archive-date-filter__block {
+  background-color: #f0f2f8;
+  padding-top: 15px;
+  padding-bottom: 21px;
+  margin-bottom: 13px;
+}
+.archive-item:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 29px;
+}
+.archive-item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding-left: 30px;
+}
+.archive-item__prev {
+  padding-top: 24px;
+}
+.archive-item__prev a {
+  display: block;
+  color: #1a1a1a;
+  font-size: 16px;
+  font-family: 'ClearSans-Regular', sans-serif;
+}
+.archive-item__prev a::before {
+  content: url(../images/prev-angle.png);
+  margin-right: 9px;
+  vertical-align: -2px;
+}
+.archive-item__prev a:hover {
+  color: #336699;
+}
+.archive-item__next {
+  padding-top: 24px;
+}
+.archive-item__next a {
+  display: block;
+  color: #1a1a1a;
+  font-size: 16px;
+  font-family: 'ClearSans-Regular', sans-serif;
+}
+.archive-item__next a::after {
+  content: url(../images/next-angle.png);
+  margin-left: 9px;
+  vertical-align: -2px;
+}
+.archive-item__next a:hover {
+  color: #336699;
+}
+.archive-item__date {
+  text-align: center;
+}
+.archive-item__date h1 {
+  color: #1a1a1a;
+  font-size: 21px;
+  font-family: 'ClearSans-Regular', sans-serif;
+  padding-bottom: 13px;
+}
+.archive-item__date button {
+  color: #ffffff;
+  border: none;
+  padding: 2px 19px 5px;
+  font-size: 16px;
+  font-family: 'ClearSans-Regular', sans-serif;
+  background-color: #be1522;
+  border-radius: 5px;
+}
+.archive-item__checkbox span {
+  margin-left: 10px;
+  margin-right: 65px;
+  color: #1a1a1a;
+  font-size: 16px;
+  font-family: 'ClearSans-Regular', sans-serif;
+  text-transform: capitalize;
+  vertical-align: 1px;
+}
+.archive-item__checkbox input {
+  border: 1px solid #9fa4af;
+  border-radius: 5px;
+}
+.calendar__visible {
+  display: none;
+}
+.archive-speech .news-block__title {
+  padding-top: 6px;
+  padding-bottom: 25px;
+}
+.archive-speech .news-title__category {
+  margin-right: 14px;
+}
+.archive-speech .speech::before {
+  left: 6.7%;
+}
+.archive-speech .speech::after {
+  left: 6.8%;
+}

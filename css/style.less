@@ -1303,3 +1303,123 @@ footer {
 }
 
 // archive page
+
+.archive-date-filter__block{
+    background-color: #f0f2f8;
+    padding-top: 15px;
+    padding-bottom: 21px;
+    margin-bottom: 13px;
+}
+
+.archive-item{
+
+    &:first-child{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 29px;
+    }
+    &:last-child{
+        display: flex;
+        justify-content: left;
+        padding-left: 30px;
+    }
+
+    &__prev{
+        padding-top: 24px;
+        & a{
+            display: block;
+            color: #1a1a1a;
+            font-size: 16px;
+            font-family: @clearRegular, sans-serif;
+            &::before{
+                content: url(../images/prev-angle.png);
+                margin-right: 9px;
+                vertical-align: -2px;
+            }
+
+            &:hover{
+                color: #336699;
+            }
+        }
+    }
+    &__next{
+        padding-top: 24px;
+        & a{
+            display: block;
+            color: #1a1a1a;
+            font-size: 16px;
+            font-family: @clearRegular, sans-serif;
+            &::after{
+                content: url(../images/next-angle.png);
+                margin-left: 9px;
+                vertical-align: -2px;
+            }
+
+            &:hover{
+                color: #336699;
+            }
+        }
+    }
+
+    &__date{
+        text-align: center;
+        & h1{
+            color: #1a1a1a;
+            font-size: 21px;
+            font-family: @clearRegular, sans-serif;
+            padding-bottom: 13px;
+        }
+
+        & button{
+            color: #ffffff;
+            border: none;
+            padding: 2px 19px 5px;
+            font-size: 16px;
+            font-family: @clearRegular, sans-serif;
+            background-color: #be1522;
+            border-radius: @borderRadius;
+        }
+    }
+
+    &__checkbox{
+
+        & span{
+            margin-left: 10px;
+            margin-right: 65px;
+            color: #1a1a1a;
+            font-size: 16px;
+            font-family: @clearRegular, sans-serif;
+            text-transform: capitalize;
+            vertical-align: 1px;
+        }
+
+        & input{
+            border: 1px solid #9fa4af;
+            border-radius: @borderRadius;
+        }
+    }
+}
+
+.calendar__visible{
+    display: none;
+}
+
+.archive-speech{
+    & .news-block__title{
+        padding-top: 6px;
+        padding-bottom: 25px;
+    }
+    & .news-title__category{
+        margin-right: 14px;
+    }
+    & .speech{
+        &::before{
+            left: 6.7%;
+        }
+        &::after{
+            left: 6.8%;
+        }
+    }
+}

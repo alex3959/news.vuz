@@ -25,7 +25,7 @@
                     </div>
                     <div class="logo__links">
                         <a href="#" class="logo-links__rss"><i class="pe-so-rss"></i></a>
-                        <a href="#" class="header-archive__button"><i class="archive-button"></i>Архив</a>
+                        <a href="archive.html" class="header-archive__button"><i class="archive-button"></i>Архив</a>
                         <a href="search.html" class="header-search__button"><i class="search-button"></i></a>
                         <a href="#" class="logo-links__facebook"><i class="pe-so-facebook"></i></a>
                         <a href="#" class="logo-links__vk"><i class="pe-so-vk"></i></a>
@@ -51,21 +51,22 @@
             <div class="page-reference"><span><a href="#">Главная</a></span><span><a href="#">Архив</a></span></div>
             <div class="news-content__title">Архив</div>
 
-            <div class="search-block__filters archive-filter-styles">
+            <div class="archive-date-filter__block">
                 <div class="archive-item">
-                    <div class="archive-item__prev"><a href="#" class="previous">День назад</a></div>
+                    <div class="archive-item__prev"><a href="#0" class="previous">День назад</a></div>
                     <div class="archive-item__date">
                         <h1>30 сентября 2017</h1>
-                        <input type="date" name="calendar">
+                        <button>Выбрать дату...</button>
+                        <input class="calendar__visible search-filter__select" type="date" name="calendar">
                     </div>
-                    <div class="archive-item__next"><a href="#" class="next">День вперед</a></div>
+                    <div class="archive-item__next"><a href="#0" class="next">День вперед</a></div>
                 </div>
                 <div class="archive-item">
-                    <div class="archive-item__chekbox"><input type="checkbox"><span>Новости</span></div>
-                    <div class="archive-item__chekbox"><input type="checkbox"><span>статьи</span></div>
-                    <div class="archive-item__chekbox"><input type="checkbox"><span>истории</span></div>
-                    <div class="archive-item__chekbox"><input type="checkbox"><span>видео</span></div>
-                    <div class="archive-item__chekbox"><input type="checkbox"><span>мнения</span></div>
+                    <div class="archive-item__checkbox"><input type="checkbox"><span>Новости</span></div>
+                    <div class="archive-item__checkbox"><input type="checkbox"><span>статьи</span></div>
+                    <div class="archive-item__checkbox"><input type="checkbox"><span>истории</span></div>
+                    <div class="archive-item__checkbox"><input type="checkbox"><span>видео</span></div>
+                    <div class="archive-item__checkbox"><input type="checkbox"><span>мнения</span></div>
                 </div>
             </div>
 
@@ -95,7 +96,7 @@
                     <div class="news-block">
                         <div class="news-block__image">
                             <div class="video-block__video">
-                                <video controls poster="images/video1.png">
+                                <video controls poster="images/news-image3.png">
                                     <source src="video/mov_bbb.mp4" type="video/mp4">
                                     <source src="video/mov_bbb.ogg" type="video/mp4">
                                 </video>
@@ -147,6 +148,49 @@
                             </div>
                         </div>
 
+                    </div>
+                    <div class="archive-speech news-block">
+                        <div class="speech-block">
+                            <div class="news-block__title">
+                                <div class="news-title__category">мнения</div>
+                                <div class="news-title__date">11:00</div>
+                            </div>
+                            <div class="speech-block__text">
+                                <p class="speech">«Ссоры вокруг НАТО, помогают ли они России? Но в том смысле, что НАТО
+                                    может
+                                    развалиться, — тогда помогут. Но пока что-то мы не видим развала. Я много раз уже
+                                    задавался
+                                    вопросом, публично его ставил, НАТО создавалось как инструмент холодной войны в
+                                    борьбе с
+                                    Советским Союзом и Варшавским договором так называемым. Сейчас нет ни Варшавского
+                                    договора,
+                                    ни Советского Союза, а НАТО существует. Возникает вопрос — а зачем? </p>
+                            </div>
+
+                            <div class="speech-block__info-wrapper">
+                                <div class="speech-block__info">
+                                    <div class="speech-info__img">
+                                        <img src="images/speech-img1.png" alt="speech-img">
+                                    </div>
+                                    <div class="speech-info">
+                                        <div class="speech-info__title">Владимир <span>ПУТИН</span></div>
+                                        <div class="speech-info__subtitle">Президент России</div>
+                                    </div>
+                                </div>
+
+                                <div class="speech-block__title">
+                                    <p> О необходимости кооперации вузов и
+                                        промышленных компаний
+                                    </p>
+                                </div>
+
+                                <div class="speech-block__interview">
+                                    <div class="speech-interview__title"><span class="interview-date">7
+                                            февраля</span><span>Интервью РИА новости</span></div>
+                                    <div class="speech-interview__subtitle">Форум ресурсоэффективности</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="news-block">
