@@ -3,7 +3,7 @@
 
 @clearRegular: 'ClearSans-Regular';
 @ClearBold   : 'ClearSans-Bold';
-@borderRadius: 5px;
+@borderRadius: 3px;
 
 .container {
     width  : 940px;
@@ -1304,122 +1304,269 @@ footer {
 
 // archive page
 
-.archive-date-filter__block{
+.archive-date-filter__block {
     background-color: #f0f2f8;
-    padding-top: 15px;
-    padding-bottom: 21px;
-    margin-bottom: 13px;
+    padding-top     : 15px;
+    padding-bottom  : 21px;
+    margin-bottom   : 13px;
 }
 
-.archive-item{
+.archive-item {
 
-    &:first-child{
-        display: flex;
+    &:first-child {
+        display        : flex;
         justify-content: space-between;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-bottom: 29px;
+        padding-left   : 50px;
+        padding-right  : 50px;
+        padding-bottom : 29px;
     }
-    &:last-child{
-        display: flex;
+
+    &:last-child {
+        display        : flex;
         justify-content: left;
-        padding-left: 30px;
+        padding-left   : 30px;
     }
 
-    &__prev{
+    &__prev {
         padding-top: 24px;
-        & a{
-            display: block;
-            color: #1a1a1a;
-            font-size: 16px;
+
+        & a {
+            display    : block;
+            color      : #1a1a1a;
+            font-size  : 16px;
             font-family: @clearRegular, sans-serif;
-            &::before{
-                content: url(../images/prev-angle.png);
-                margin-right: 9px;
+
+            &::before {
+                content       : url(../images/prev-angle.png);
+                margin-right  : 9px;
                 vertical-align: -2px;
             }
 
-            &:hover{
-                color: #336699;
-            }
-        }
-    }
-    &__next{
-        padding-top: 24px;
-        & a{
-            display: block;
-            color: #1a1a1a;
-            font-size: 16px;
-            font-family: @clearRegular, sans-serif;
-            &::after{
-                content: url(../images/next-angle.png);
-                margin-left: 9px;
-                vertical-align: -2px;
-            }
-
-            &:hover{
+            &:hover {
                 color: #336699;
             }
         }
     }
 
-    &__date{
+    &__next {
+        padding-top: 24px;
+
+        & a {
+            display    : block;
+            color      : #1a1a1a;
+            font-size  : 16px;
+            font-family: @clearRegular, sans-serif;
+
+            &::after {
+                content       : url(../images/next-angle.png);
+                margin-left   : 9px;
+                vertical-align: -2px;
+            }
+
+            &:hover {
+                color: #336699;
+            }
+        }
+    }
+
+    &__date {
         text-align: center;
-        & h1{
-            color: #1a1a1a;
-            font-size: 21px;
-            font-family: @clearRegular, sans-serif;
+
+        & h1 {
+            color         : #1a1a1a;
+            font-size     : 21px;
+            font-family   : @clearRegular, sans-serif;
             padding-bottom: 13px;
         }
 
-        & button{
-            color: #ffffff;
-            border: none;
-            padding: 2px 19px 5px;
-            font-size: 16px;
-            font-family: @clearRegular, sans-serif;
+        & button {
+            color           : #ffffff;
+            border          : none;
+            padding         : 2px 19px 5px;
+            font-size       : 16px;
+            font-family     : @clearRegular, sans-serif;
             background-color: #be1522;
-            border-radius: @borderRadius;
+            border-radius   : @borderRadius;
         }
     }
 
-    &__checkbox{
+    &__checkbox {
 
-        & span{
-            margin-left: 10px;
-            margin-right: 65px;
-            color: #1a1a1a;
-            font-size: 16px;
-            font-family: @clearRegular, sans-serif;
+        & span {
+            margin-left   : 10px;
+            margin-right  : 65px;
+            color         : #1a1a1a;
+            font-size     : 16px;
+            font-family   : @clearRegular, sans-serif;
             text-transform: capitalize;
             vertical-align: 1px;
         }
 
-        & input{
-            border: 1px solid #9fa4af;
+        & input {
+            border       : 1px solid #9fa4af;
             border-radius: @borderRadius;
         }
     }
 }
 
-.calendar__visible{
+.calendar__visible {
     display: none;
 }
 
-.archive-speech{
-    & .news-block__title{
-        padding-top: 6px;
+.archive-speech {
+    & .news-block__title {
+        padding-top   : 6px;
         padding-bottom: 25px;
     }
-    & .news-title__category{
+
+    & .news-title__category {
         margin-right: 14px;
     }
-    & .speech{
-        &::before{
+
+    & .speech {
+        &::before {
             left: 6.7%;
         }
-        &::after{
+
+        &::after {
             left: 6.8%;
+        }
+    }
+}
+
+// video page
+
+.video-page-style {
+    margin-bottom: 13px;
+}
+
+.video-button-style {
+    padding-bottom: 54px;
+}
+
+.video-block-item {
+    & .video-block__text {
+        font-size  : 30px;
+        line-height: 1.1;
+    }
+
+    & .news-block__title {
+        padding: 10px;
+
+        & .news-title__date {
+            color: #8a9eb1;
+        }
+
+        & .news-title__day {
+            color: #d7d7d7;
+        }
+    }
+}
+
+// news page
+
+.news-menu {
+    padding-top: 26px;
+}
+
+.category-menu {
+    display        : flex;
+    justify-content: left;
+
+    & li {
+        &:first-child {
+            margin-left: 0;
+        }
+
+        margin-left: 121px;
+    }
+
+    & li a {
+        display    : block;
+        padding    : 8px 12px;
+        font-size  : 16px;
+        font-family: @clearRegular, sans-serif;
+        color      : #9196a2;
+
+        &:hover {
+            background-color: #be1522;
+            border-radius   : @borderRadius;
+            color           : #ffffff;
+        }
+    }
+}
+
+.news-page_relative {
+    position: relative;
+}
+
+.aside-social-links {
+    position: absolute;
+    right   : -90px;
+    top     : 135px;
+    & ul {
+        background-color: #f0f2f8;
+        padding         : 8px 9px;
+
+        & li {
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        & .icon-shadow {
+            background-color: #9fa4af;
+            color           : #fff;
+            width           : 1.63636em;
+            height          : 1.63636em;
+            line-height     : 1.63636em;
+            text-align      : center;
+
+            &.pe-so-facebook:hover {
+                background-color: #3b5998;
+            }
+
+            &.pe-so-pinterest:hover {
+                background-color: #ca3a27;
+            }
+
+            &.pe-so-odnolassniki:hover {
+                background-color: #f28431;
+            }
+
+            &.pe-so-twitter:hover {
+                background-color: #4ca6de;
+            }
+
+            &.pe-so-google-plus:hover {
+                background-color: #d93f2d;
+            }
+
+            &.pe-so-youtube-1:hover {
+                background-color: #e1422c;
+            }
+
+            &.pe-so-linkedin:hover {
+                background-color: #3371b8;
+            }
+        }
+    }
+}
+
+// video list page
+
+.video-item__news{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 27px;
+    & .video-block-item{
+        width: 454px;
+
+        & .video-block__text{
+            font-size: 16px;
+            line-height: 1.3;
         }
     }
 }
