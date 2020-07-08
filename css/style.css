@@ -1089,12 +1089,6 @@ footer {
   border: none;
   text-decoration: underline;
 }
-.horizontal-style {
-  border-bottom: 1px solid #dce2e7;
-}
-.horizontal-style:last-child {
-  border-bottom: none;
-}
 .horizontal-style .news-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1103,8 +1097,13 @@ footer {
       -ms-flex-pack: left;
           justify-content: left;
   width: 100%;
-  margin-top: 20px;
-  margin-bottom: 22px;
+  margin-bottom: 0;
+  padding-top: 19px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #dce2e7;
+}
+.horizontal-style .news-block:last-child {
+  border-bottom: none;
 }
 .horizontal-style .news-block__image video {
   max-width: none;

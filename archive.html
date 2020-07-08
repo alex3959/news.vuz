@@ -48,98 +48,24 @@
 
     <div class="content">
         <div class="container">
-            <div class="page-reference"><span><a href="#">Главная</a></span><span><a href="#">поиск</a></span></div>
-            <div class="news-content__title">поиск</div>
+            <div class="page-reference"><span><a href="#">Главная</a></span><span><a href="#">Архив</a></span></div>
+            <div class="news-content__title">Архив</div>
 
-            <div class="search-block">
-                <div class="search-block__input">
-                    <input class="search" type="search" placeholder="Введите поисковой запрос">
-                    <input class="search-button" type="image" src="images/search-button.png">
+            <div class="search-block__filters archive-filter-styles">
+                <div class="archive-item">
+                    <div class="archive-item__prev"><a href="#" class="previous">День назад</a></div>
+                    <div class="archive-item__date">
+                        <h1>30 сентября 2017</h1>
+                        <input type="date" name="calendar">
+                    </div>
+                    <div class="archive-item__next"><a href="#" class="next">День вперед</a></div>
                 </div>
-                <div class="search-block__filters">
-                    <div class="select-item__wrap">
-                        <div class="search-filters__item">
-                            <h1>Жанры</h1>
-                            <select class="search-filter__select">
-                                <option value="all" selected>Все материалы...</option>
-                                <option value="1">Факультет</option>
-                                <option value="2">Спорт</option>
-                                <option value="3">Ректорат</option>
-                                <option value="4">Конференция</option>
-                                <option value="5">Студенты</option>
-                            </select>
-                        </div>
-
-                        <div class="search-filters__item">
-                            <h1>Рубрики</h1>
-                            <select class="search-filter__select">
-                                <option value="all" selected>Все рубрики...</option>
-                                <option value="1">Факультет</option>
-                                <option value="2">Спорт</option>
-                                <option value="3">Ректорат</option>
-                                <option value="4">Конференция</option>
-                                <option value="5">Студенты</option>
-                            </select>
-                        </div>
-
-                        <div class="search-filters__item">
-                            <h1>Тэги</h1>
-                            <select class="search-filter__select">
-                                <option value="all" selected>Все тэги...</option>
-                                <option value="1">Факультет</option>
-                                <option value="2">Спорт</option>
-                                <option value="3">Ректорат</option>
-                                <option value="4">Конференция</option>
-                                <option value="5">Студенты</option>
-                            </select>
-                        </div>
-
-                        <div class="search-filters__item">
-                            <h1>Персоны</h1>
-                            <select class="search-filter__select">
-                                <option value="all" selected>Все персоны...</option>
-                                <option value="1">Факультет</option>
-                                <option value="2">Спорт</option>
-                                <option value="3">Ректорат</option>
-                                <option value="4">Конференция</option>
-                                <option value="5">Студенты</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="search-filters__item date-style_padding">
-                        <h1>Даты</h1>
-                        <div class="date__item">
-                            <span>С</span><input class="search-filter__select date-style" type="date" name="calendar"
-                                value="2020-07-04">
-                            <span>До</span><input class="search-filter__select date-style" type="date" name="calendar"
-                                value="2020-07-11">
-                        </div>
-                    </div>
-                </div>
-                <div class="search-block__expand">
-                    <span class="expand-title">Расширенный поиск</span>
-                    <div class="expand-checkbox">
-                        <input type="checkbox" class="checkbox">
-                        <span>точное совпадение</span>
-                    </div>
-                    <button class="found-btn">Найти</button>
-                    <button class="reset-btn">Сбросить настройки</button>
-                </div>
-
-                <div class="search-result__block">
-                    <h1>Найдено<span class="result-title_red"><span class="found-count">155</span>результатов</span>
-                    </h1>
-                    <div class="block__result_sort">
-                        <span class="block-result-sort__title">Сортировать по:</span>
-                        <span class="found-type">релевантности</span>
-                        <select>
-                            <option>по дате</option>
-                            <option>Сегодня</option>
-                            <option>Вчера</option>
-                            <option>За месяц</option>
-                        </select>
-                    </div>
+                <div class="archive-item">
+                    <div class="archive-item__chekbox"><input type="checkbox"><span>Новости</span></div>
+                    <div class="archive-item__chekbox"><input type="checkbox"><span>статьи</span></div>
+                    <div class="archive-item__chekbox"><input type="checkbox"><span>истории</span></div>
+                    <div class="archive-item__chekbox"><input type="checkbox"><span>видео</span></div>
+                    <div class="archive-item__chekbox"><input type="checkbox"><span>мнения</span></div>
                 </div>
             </div>
 
@@ -242,6 +168,7 @@
                     </div>
 
                 </div>
+
             </div>
         </div>
 
