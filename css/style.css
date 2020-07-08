@@ -985,19 +985,17 @@ footer {
   margin-left: 18px;
   color: #ffffff;
   background-color: #be1522;
+  -webkit-box-shadow: 0 0 5p;
+          box-shadow: 0 0 5p;
   border: none;
   padding: 0 30px 0 45px;
   height: 40px;
   border-radius: 5px;
   position: relative;
 }
-.search-block__expand .found-btn:hover {
-  -webkit-box-shadow: 0 0 3px #000000;
-          box-shadow: 0 0 3px #000000;
-}
 .search-block__expand .found-btn:active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  -webkit-box-shadow: inset 0 0 13px #684242;
+          box-shadow: inset 0 0 13px #684242;
 }
 .search-block__expand .found-btn::before {
   content: url(../images/found-btn.png);
@@ -1110,6 +1108,12 @@ footer {
 }
 .horizontal-style .news-block__image video {
   max-width: none;
+  width: 212px;
+  height: 140px;
+}
+.horizontal-style .news-block__image img {
+  width: 212px;
+  height: 140px;
 }
 .horizontal-style .news-block__info_right {
   margin-left: 30px;
