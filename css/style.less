@@ -691,7 +691,7 @@ footer {
             color          : #8a9eb1;
             font-size      : 14px;
             text-decoration: none;
-            text-transform : capitalize;
+            text-transform : initial;
             font-family    : @clearRegular, sans-serif;
         }
 
@@ -1638,4 +1638,238 @@ footer {
 .article-main-title_style {
     padding-top   : 27px;
     padding-bottom: 23px;
+}
+
+// contacts page
+
+.contacts-block {
+    color         : #272727;
+    padding-bottom: 79px;
+
+    &__title {
+        font-size     : 30px;
+        font-family   : @ClearBold, sans-serif;
+        padding-bottom: 32px;
+    }
+
+    &__phone {
+        font-size  : 18px;
+        font-family: @clearRegular, sans-serif;
+
+        &::before {
+            content     : url(../images/contacts-phone-icon.png);
+            margin-right: 21px;
+        }
+
+        padding-bottom: 7px;
+    }
+
+    &__mail {
+        & a {
+            color      : #336699;
+            font-size  : 18px;
+            font-family: @clearRegular, sans-serif;
+        }
+
+        &::before {
+            content     : url(../images/contacts-mail-icon.png);
+            margin-right: 19px;
+        }
+    }
+}
+
+// about-project page
+
+.about-project {
+    color         : #272727;
+    padding-bottom: 90px;
+
+    &__title {
+        font-size  : 30px;
+        font-family: @ClearBold, sans-serif;
+
+        & span {
+            color: #be1522;
+        }
+    }
+
+    &__subtitle {
+        background-color: #f0f2f8;
+        font-size       : 21px;
+        font-family     : @ClearBold, sans-serif;
+        padding         : 23px 21px;
+        margin-top      : 34px;
+        margin-bottom   : 37px;
+    }
+
+    &__text {
+        font-size  : 18px;
+        font-family: @clearRegular, sans-serif;
+    }
+
+    &__images {
+        display        : flex;
+        justify-content: space-between;
+        margin-top     : 40px;
+        margin-bottom  : 42px;
+
+        & img {
+            width : 293px;
+            height: 197px;
+        }
+    }
+}
+
+// partners page
+
+.partners-block {
+    padding-bottom: 38px;
+
+    &__item {
+        display        : flex;
+        justify-content: space-between;
+        border-bottom  : 1px solid #dce2e7;
+        padding-top    : 36px;
+        padding-bottom : 28px;
+
+        &:first-child {
+            padding-top: 7px;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &__image {
+        width     : 221px;
+        text-align: center;
+        align-self: center;
+    }
+
+    &__text {
+        & span {
+            color      : #1a1a1a;
+            font-size  : 16px;
+            font-family: @ClearBold, sans-serif;
+        }
+
+        width      : 698px;
+        color      : #656565;
+        line-height: 1.4;
+        font-size  : 14px;
+        font-family: @clearRegular,
+        sans-serif;
+    }
+}
+
+// project-block
+
+.project-block {
+    padding-bottom: 73px;
+
+    &__text {
+        line-height: 1.2;
+        color      : #272727;
+        font-family: @clearRegular, sans-serif;
+
+        & span {
+            font-size  : 21px;
+            font-family: @ClearBold, sans-serif;
+            color      : #be1522;
+        }
+
+        & a {
+            color: #336699;
+        }
+    }
+
+    &__title {
+        margin-top : 25px;
+        font-size  : 21px;
+        font-family: @ClearBold, sans-serif;
+    }
+}
+
+// subscribe-block
+
+.subscribe-block {
+    padding-bottom: 57px;
+
+    &__title {
+        color        : #212121;
+        font-size    : 24px;
+        font-family  : @clearRegular, sans-serif;
+        margin-bottom: 27px;
+    }
+
+    &__wrap {
+        padding         : 20px 14px;
+        background-color: #f0f2f8;
+    }
+
+    &__checkbox {
+        display        : flex;
+        justify-content: left;
+
+        & .checkbox-item {
+            margin-top: 7px;
+        }
+
+        &:last-child {
+            & .subscribe-checkbox {
+                margin-right : 50px;
+                margin-bottom: 7px;
+                opacity      : 0.3;
+            }
+        }
+    }
+
+    & .subscribe-checkbox {
+        margin-bottom: 36px;
+        color        : #1a1a1a;
+        font-size    : 16px;
+        font-family  : @clearRegular, sans-serif;
+
+        & input {
+            margin-right  : 10px;
+            vertical-align: -2px;
+            width         : 18px;
+            height        : 18px;
+        }
+    }
+
+    &__select {
+        margin-left : 59px;
+        margin-right: 111px;
+
+        & select {
+            width      : 212px;
+            padding    : 4px 4px 3px;
+            border     : 1px solid #c8d5dd;
+            text-align : center;
+            color      : #8a9eb1;
+            font-size  : 14px;
+            font-family: @clearRegular, sans-serif;
+        }
+    }
+
+    &__button {
+        margin-top: 23px;
+    }
+}
+
+//participant-block
+
+.participant-block {
+    padding-bottom: 61px;
+    & .partners-block__text {
+        cursor: pointer;
+
+        &:hover {
+            & span {
+                color: #336699;
+            }
+        }
+    }
 }
