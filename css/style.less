@@ -1863,6 +1863,7 @@ footer {
 
 .participant-block {
     padding-bottom: 61px;
+
     & .partners-block__text {
         cursor: pointer;
 
@@ -1870,6 +1871,63 @@ footer {
             & span {
                 color: #336699;
             }
+        }
+    }
+}
+
+// error page
+
+.error-block {
+    text-align    : center;
+    padding-top   : 105px;
+    padding-bottom: 138px;
+
+    &__num {
+        width           : 280px;
+        height          : 128px;
+        background-color: #be1522;
+        color           : #ffffff;
+        text-align      : center;
+        position        : relative;
+        border-radius   : 3px;
+        margin          : 0 auto;
+
+        & .error-title {
+            font-size     : 24px;
+            font-family   : @clearRegular, sans-serif;
+            text-transform: uppercase;
+            transform     : rotate(-90deg);
+            position      : absolute;
+            top           : 52px;
+            left          : -32px;
+        }
+
+        & .error-num {
+            width      : 200px;
+            margin-left: 43px;
+            font-size  : 110.21px;
+            font-family: @ClearBold, sans-serif;
+        }
+    }
+
+    &__title {
+        margin-top   : 34px;
+        margin-bottom: 29px;
+        color        : #383a3b;
+        font-size    : 30px;
+        font-family  : @ClearBold, sans-serif;
+    }
+
+    &__text {
+        width      : 690px;
+        margin     : 0 auto;
+        color      : #444444;
+        line-height: 1.2;
+        font-size  : 18px;
+        font-family: @clearRegular, sans-serif;
+
+        & a {
+            color: #336699;
         }
     }
 }
