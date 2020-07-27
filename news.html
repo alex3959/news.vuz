@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/social-icon/css/pe-icon-social.css">
     <link rel="stylesheet" href="css/social-icon/css/helper.css">
     <link rel="stylesheet" href="css/social-icon/css/social-style.css">
@@ -19,17 +19,18 @@
                 <div class="logo-wrap">
                     <div class="logo__inner">
                         <div class="logo__title">10 апреля 2016, четверг, 12:24</div>
-                        <div class="logo"><a href="#"><img src="images/logo-shapka-02.svg" alt="header-logo"
-                                    width="375px" height="35px"></a></div>
+                        <div class="logo"><a href="http://vuznews.com/news.vuz/"><img src="images/logo-shapka-02.svg"
+                                    alt="header-logo" width="375px" height="35px"></a></div>
                         <div class="logo__subtitle">Портал высшей школы России</div>
                     </div>
                     <div class="logo__links">
-                        <a href="#" class="logo-links__rss"><i class="pe-so-rss"></i></a>
+                        <a href="rss.com" class="logo-links__rss"><i class="pe-so-rss"></i></a>
                         <a href="archive.html" class="header-archive__button"><i class="archive-button"></i>Архив</a>
                         <a href="search.html" class="header-search__button"><i class="search-button"></i></a>
-                        <a href="#" class="logo-links__facebook"><i class="pe-so-facebook"></i></a>
-                        <a href="#" class="logo-links__vk"><i class="pe-so-vk"></i></a>
+                        <a href="www.facebook.com" class="logo-links__facebook"><i class="pe-so-facebook"></i></a>
+                        <a href="www.vk.ru" class="logo-links__vk"><i class="pe-so-vk"></i></a>
                     </div>
+                    <button class="navigation--button"><i class="navigation-menu-icon">|||</i></button>
                 </div>
             </div>
         </div>
@@ -37,10 +38,14 @@
         <div class="header-nav-wrap">
             <div class="container">
                 <ul class="header-nav">
-                    <li><a href="index.html" class="nav-menu">новости</a></li>
+                    <button class="nav-btn_exit"></button>
+                    <li><a href="index.html" class="nav-menu active-menu">новости</a></li>
                     <li><a href="speech.html" class="nav-menu">мнения</a></li>
                     <li><a href="history.html" class="nav-menu">истории и люди</a></li>
                     <li><a href="article.html" class="nav-menu">статьи</a></li>
+                    <li class="nav-hide"><a href="archive.html" class="nav-menu">Архив</a></li>
+                    <li class="nav-hide"><a href="search.html" class="nav-menu">Поиск</a></li>
+                    <li class="nav-hide"><a href="error.html" class="nav-menu">RSS</a></li>
                 </ul>
             </div>
         </div>
@@ -77,7 +82,7 @@
                         <div class="news-title__day">, 2 февраля</div>
                     </div>
                     <div class="news-block__image"><img src="images/main_history-img.png" alt="news-image"></div>
-                    <h1 class="history-block__title">Российские вузы вошли в число лучших среди стран БРИКС и
+                    <h1 class="history-page__title">Российские вузы вошли в число лучших среди стран БРИКС и
                         развивающихся экономик</h1>
                     <p class="history-block__text">Группа ученых Томского политехнического университета работает над
                         фундаментальным проектом по изучению роли йода в работе гормона тироксина — это так
@@ -119,7 +124,8 @@
                         <li><a href="#"><i class="pe-so-google-plus pe-bg pe-bg-rd pe-lg icon-shadow"></i></a></li>
                         <li><a href="#"><i class="pe-so-twitter pe-bg pe-bg-rd pe-lg icon-shadow"></i></a></li>
                         <li><a href="#"><i class="pe-so-instagram pe-bg pe-bg-rd pe-lg icon-shadow"></i></a></li>
-                        <li><a href="#"><i class="pe-so-odnolassniki pe-bg pe-bg-rd pe-lg icon-shadow"></i></a></li>
+                        <li class="social-icon-ok"><a href="#"><i
+                                    class="pe-so-odnolassniki pe-bg pe-bg-rd pe-lg icon-shadow"></i></a></li>
                         <li><a href="#"><i class="pe-so-linkedin pe-bg pe-bg-rd pe-lg icon-shadow"></i></a></li>
                     </ul>
                 </article>
@@ -188,7 +194,7 @@
                     </div>
 
                 </aside>
-                
+
             </div>
 
             <div class="content-line_unterline"></div>
@@ -263,34 +269,30 @@
                 </ul>
             </div>
         </div>
-        
+
     </div>
 
 
     <footer>
         <div class="container">
             <div class="footer-block-wrap">
-                <div class="footer-logo-links">
-                    <div class="footer__logo"><a href="#"><img src="images/logo-footer2.svg" alt="logo-footer"></a>
+                <div class="footer-block__item">
+                    <div class="footer__logo"><a href="http://vuznews.com/news.vuz/"><img src="images/logo-footer2.svg"
+                                alt="logo-footer"></a>
                     </div>
-                    <div class="footer-logo__title">Нашли опечатку?
-                        <span>CTRL+ENTER</span></div>
-                    <div class="footer__social-links">
-                        <a href="#" class="logo-links__facebook"><i class="pe-so-facebook"></i></a>
-                        <a href="#" class="logo-links__vk"><i class="pe-so-vk"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer__support-block">
                     <div class="footer__menu">
                         <ul>
-                            <li><a href="#">О проекте</a></li>
-                            <li><a href="#">Контакты</a></li>
-                            <li><a href="#">Партнеры</a></li>
-                            <li><a href="#">RSS</a></li>
-                            <li><a href="#">Правила использования информации</a></li>
+                            <li><a href="aboutProject.html">О проекте</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                            <li><a href="partners.html">Партнеры</a></li>
+                            <li><a href="error.html">RSS</a></li>
+                            <li><a href="#0">Правила использования информации</a></li>
                         </ul>
                     </div>
+                </div>
+                <div class="footer-block__item footer-supports-wrap_style">
+                    <div class="footer-logo__title">Нашли опечатку?
+                        <span>CTRL+ENTER</span></div>
                     <div class="footer__supports">
                         <span>При поддержке:</span>
                         <ul>
@@ -299,6 +301,12 @@
                             <li><a href="#"><img src="images/footer-support-img3.png" alt="support-img"></a></li>
                             <li><a href="#"><img src="images/footer-support-img4.png" alt="support-img"></a></li>
                         </ul>
+                    </div>
+                </div>
+                <div class="footer-block__item">
+                    <div class="footer__social-links">
+                        <a href="www.facebook.com" class="logo-links__facebook"><i class="pe-so-facebook"></i></a>
+                        <a href="www.vk.ru" class="logo-links__vk"><i class="pe-so-vk"></i></a>
                     </div>
                     <div class="footer__title">Категория информации<span>18+</span></div>
                 </div>

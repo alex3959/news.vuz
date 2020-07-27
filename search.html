@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/social-icon/css/pe-icon-social.css">
     <link rel="stylesheet" href="css/social-icon/css/helper.css">
     <link rel="stylesheet" href="css/social-icon/css/social-style.css">
@@ -19,17 +19,18 @@
                 <div class="logo-wrap">
                     <div class="logo__inner">
                         <div class="logo__title">10 апреля 2016, четверг, 12:24</div>
-                        <div class="logo"><a href="#"><img src="images/logo-shapka-02.svg" alt="header-logo"
-                                    width="375px" height="35px"></a></div>
+                        <div class="logo"><a href="http://vuznews.com/news.vuz/"><img src="images/logo-shapka-02.svg"
+                                    alt="header-logo" width="375px" height="35px"></a></div>
                         <div class="logo__subtitle">Портал высшей школы России</div>
                     </div>
                     <div class="logo__links">
-                        <a href="#" class="logo-links__rss"><i class="pe-so-rss"></i></a>
+                        <a href="rss.com" class="logo-links__rss"><i class="pe-so-rss"></i></a>
                         <a href="archive.html" class="header-archive__button"><i class="archive-button"></i>Архив</a>
                         <a href="search.html" class="header-search__button"><i class="search-button"></i></a>
-                        <a href="#" class="logo-links__facebook"><i class="pe-so-facebook"></i></a>
-                        <a href="#" class="logo-links__vk"><i class="pe-so-vk"></i></a>
+                        <a href="www.facebook.com" class="logo-links__facebook"><i class="pe-so-facebook"></i></a>
+                        <a href="www.vk.ru" class="logo-links__vk"><i class="pe-so-vk"></i></a>
                     </div>
+                    <button class="navigation--button"><i class="navigation-menu-icon">|||</i></button>
                 </div>
             </div>
         </div>
@@ -37,10 +38,14 @@
         <div class="header-nav-wrap">
             <div class="container">
                 <ul class="header-nav">
+                    <button class="nav-btn_exit"></button>
                     <li><a href="index.html" class="nav-menu">новости</a></li>
                     <li><a href="speech.html" class="nav-menu">мнения</a></li>
                     <li><a href="history.html" class="nav-menu">истории и люди</a></li>
                     <li><a href="article.html" class="nav-menu">статьи</a></li>
+                    <li class="nav-hide"><a href="archive.html" class="nav-menu">Архив</a></li>
+                    <li class="nav-hide"><a href="search.html" class="nav-menu">Поиск</a></li>
+                    <li class="nav-hide"><a href="error.html" class="nav-menu">RSS</a></li>
                 </ul>
             </div>
         </div>
@@ -48,7 +53,8 @@
 
     <div class="content">
         <div class="container">
-            <div class="page-reference"><span><a href="#">Главная</a></span><span><a href="#">поиск</a></span></div>
+            <div class="page-reference content__title"><span><a href="#">Главная</a></span><span><a
+                        href="#">Поиск</a></span></div>
             <div class="news-content__title">поиск</div>
 
             <div class="search-block">
@@ -123,171 +129,180 @@
                         <input type="checkbox" class="checkbox">
                         <span>точное совпадение</span>
                     </div>
-                    <button class="found-btn">Найти</button>
-                    <button class="reset-btn">Сбросить настройки</button>
+                    <div class="expand-buttons">
+                        <button class="found-btn">Найти</button>
+                        <button class="reset-btn">Сбросить настройки</button>
+                    </div>
                 </div>
 
                 <div class="search-result__block">
                     <h1>Найдено<span class="result-title_red"><span class="found-count">155</span>результатов</span>
                     </h1>
                     <div class="block__result_sort">
-                        <span class="block-result-sort__title">Сортировать по:</span>
-                        <span class="found-type">релевантности</span>
-                        <select>
-                            <option>по дате</option>
-                            <option>Сегодня</option>
-                            <option>Вчера</option>
-                            <option>За месяц</option>
-                        </select>
+                        <div class="block-result-sort__title">Сортировать по:</div>
+                        <div class="found-type">
+                            <a href="#0">релевантности</a>
+                            <select>
+                                <option>по дате</option>
+                                <option>Сегодня</option>
+                                <option>Вчера</option>
+                                <option>За месяц</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-container">
+
+                    <div class="news-item__block horizontal-style">
+                        <div class="news-block">
+                            <div class="news-block__image"><img src="images/news-image.png" alt="news-image"></div>
+
+                            <div class="news-block__info_right">
+                                <div class="news-block__title">
+                                    <div class="news-title__category">новости</div>
+                                    <div class="news-title__category">инновации</div>
+                                    <div class="news-title__date">14:27</div>
+                                </div>
+                                <div class="news-block__text"><a href="#">Российские вузы вошли в число лучших среди
+                                        стран
+                                        БРИКС и развивающихся экономик</a></div>
+                                <div class="news-item__text">Подписи под документом поставили ректор ТПУ Пётр Чубик и
+                                    председатель Дальневосточного отделения Российской академии наук Валентин Сергиенко.
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="news-block">
+                            <div class="news-block__image">
+                                <div class="video-block__video">
+                                    <video controls poster="images/video1.png">
+                                        <source src="video/mov_bbb.mp4" type="video/mp4">
+                                        <source src="video/mov_bbb.ogg" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+
+                            <div class="news-block__info_right">
+                                <div class="news-block__title">
+                                    <div class="news-title__category">видео</div>
+                                    <div class="news-title__date">14:35</div>
+                                </div>
+                                <div class="news-block__text"><a href="#">Молодой ученый ТПУ работает над созданием
+                                        нового
+                                        метода борьбы с вирусом гриппа H1N1</a></div>
+                                <div class="news-item__text">Подписи под документом поставили ректор ТПУ Пётр Чубик и
+                                    председатель Дальневосточного отделения Российской академии наук Валентин Сергиенко.
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="news-block">
+                            <div class="news-block__image"><img src="images/news-image5.png" alt="news-image"></div>
+
+                            <div class="news-block__info_right">
+                                <div class="news-block__title">
+                                    <div class="news-title__category">статьи</div>
+                                    <div class="news-title__date">11:00</div>
+                                </div>
+                                <div class="news-block__text"><a href="#">ВШЭ: «Несамостоятельный выбор специальности
+                                        часто
+                                        приводит к „аллергии“ на учебу, а затем — к отчислению»</a></div>
+                                <div class="news-item__text"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="news-block">
+                            <div class="news-block__image"><img src="images/news-image2.png" alt="news-image"></div>
+
+                            <div class="news-block__info_right">
+                                <div class="news-block__title">
+                                    <div class="news-title__category">новости</div>
+                                    <div class="news-title__category">в мире</div>
+                                    <div class="news-title__date">17:45</div>
+                                </div>
+                                <div class="news-block__text"><a href="#">В ТГУ разрабатывают новый способ лечения
+                                        аутизма и
+                                        нарушений памяти</a></div>
+                                <div class="news-item__text">Подписи под документом поставили ректор ТПУ Пётр Чубик и
+                                    председатель Дальневосточного отделения Российской академии наук Валентин Сергиенко.
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="news-block">
+                            <div class="news-block__image"><img src="images/news-image6.png" alt="news-image"
+                                    width="212px" height="140px"></div>
+
+                            <div class="news-block__info_right">
+                                <div class="news-block__title">
+                                    <div class="news-title__category">ИСТОРИИ</div>
+                                    <div class="news-title__date">15:00</div>
+                                </div>
+                                <div class="news-block__text"><a href="#">Преподавателя Иркутского государственного
+                                        университета уволили за «недостаточно патриотичные взгляды»</a></div>
+                                <div class="news-item__text">Подписи под документом поставили ректор ТПУ Пётр Чубик и
+                                    председатель Дальневосточного отделения Российской академии наук Валентин Сергиенко.
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
 
-            <div class="news-container">
-
-                <div class="news-item__block horizontal-style">
-                    <div class="news-block">
-                        <div class="news-block__image"><img src="images/news-image.png" alt="news-image"></div>
-
-                        <div class="news-block__info_right">
-                            <div class="news-block__title">
-                                <div class="news-title__category">новости</div>
-                                <div class="news-title__category">инновации</div>
-                                <div class="news-title__date">14:27</div>
-                            </div>
-                            <div class="news-block__text"><a href="#">Российские вузы вошли в число лучших среди стран
-                                    БРИКС и развивающихся экономик</a></div>
-                            <div class="news-item__text">Подписи под документом поставили ректор ТПУ Пётр Чубик и
-                                председатель Дальневосточного отделения Российской академии наук Валентин Сергиенко.
-                            </div>
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="news-block">
-                        <div class="news-block__image">
-                            <div class="video-block__video">
-                                <video controls poster="images/video1.png">
-                                    <source src="video/mov_bbb.mp4" type="video/mp4">
-                                    <source src="video/mov_bbb.ogg" type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
-
-                        <div class="news-block__info_right">
-                            <div class="news-block__title">
-                                <div class="news-title__category">видео</div>
-                                <div class="news-title__date">14:35</div>
-                            </div>
-                            <div class="news-block__text"><a href="#">Молодой ученый ТПУ работает над созданием нового
-                                    метода борьбы с вирусом гриппа H1N1</a></div>
-                            <div class="news-item__text">Подписи под документом поставили ректор ТПУ Пётр Чубик и
-                                председатель Дальневосточного отделения Российской академии наук Валентин Сергиенко.
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="news-block">
-                        <div class="news-block__image"><img src="images/news-image5.png" alt="news-image"></div>
-
-                        <div class="news-block__info_right">
-                            <div class="news-block__title">
-                                <div class="news-title__category">статьи</div>
-                                <div class="news-title__date">11:00</div>
-                            </div>
-                            <div class="news-block__text"><a href="#">ВШЭ: «Несамостоятельный выбор специальности часто
-                                    приводит к „аллергии“ на учебу, а затем — к отчислению»</a></div>
-                            <div class="news-item__text"></div>
-                        </div>
-
-                    </div>
-
-                    <div class="news-block">
-                        <div class="news-block__image"><img src="images/news-image2.png" alt="news-image"></div>
-
-                        <div class="news-block__info_right">
-                            <div class="news-block__title">
-                                <div class="news-title__category">новости</div>
-                                <div class="news-title__category">в мире</div>
-                                <div class="news-title__date">17:45</div>
-                            </div>
-                            <div class="news-block__text"><a href="#">В ТГУ разрабатывают новый способ лечения аутизма и
-                                    нарушений памяти</a></div>
-                            <div class="news-item__text">Подписи под документом поставили ректор ТПУ Пётр Чубик и
-                                председатель Дальневосточного отделения Российской академии наук Валентин Сергиенко.
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="news-block">
-                        <div class="news-block__image"><img src="images/news-image6.png" alt="news-image" width="212px"
-                                height="140px"></div>
-
-                        <div class="news-block__info_right">
-                            <div class="news-block__title">
-                                <div class="news-title__category">ИСТОРИИ</div>
-                                <div class="news-title__date">15:00</div>
-                            </div>
-                            <div class="news-block__text"><a href="#">Преподавателя Иркутского государственного
-                                    университета уволили за «недостаточно патриотичные взгляды»</a></div>
-                            <div class="news-item__text">Подписи под документом поставили ректор ТПУ Пётр Чубик и
-                                председатель Дальневосточного отделения Российской академии наук Валентин Сергиенко.
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
         </div>
 
-    </div>
 
-
-    <footer>
-        <div class="container">
-            <div class="footer-block-wrap">
-                <div class="footer-logo-links">
-                    <div class="footer__logo"><a href="#"><img src="images/logo-footer2.svg" alt="logo-footer"></a>
+        <footer>
+            <div class="container">
+                <div class="footer-block-wrap">
+                    <div class="footer-block__item">
+                        <div class="footer__logo"><a href="http://vuznews.com/news.vuz/"><img
+                                    src="images/logo-footer2.svg" alt="logo-footer"></a>
+                        </div>
+                        <div class="footer__menu">
+                            <ul>
+                                <li><a href="aboutProject.html">О проекте</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                                <li><a href="partners.html">Партнеры</a></li>
+                                <li><a href="#0">RSS</a></li>
+                                <li><a href="#0">Правила использования информации</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="footer-logo__title">Нашли опечатку?
-                        <span>CTRL+ENTER</span></div>
-                    <div class="footer__social-links">
-                        <a href="#" class="logo-links__facebook"><i class="pe-so-facebook"></i></a>
-                        <a href="#" class="logo-links__vk"><i class="pe-so-vk"></i></a>
+                    <div class="footer-block__item footer-supports-wrap_style">
+                        <div class="footer-logo__title">Нашли опечатку?
+                            <span>CTRL+ENTER</span></div>
+                        <div class="footer__supports">
+                            <span>При поддержке:</span>
+                            <ul>
+                                <li><a href="#"><img src="images/footer-support-img.png" alt="support-img"></a></li>
+                                <li><a href="#"><img src="images/footer-support-img2.png" alt="support-img"></a></li>
+                                <li><a href="#"><img src="images/footer-support-img3.png" alt="support-img"></a></li>
+                                <li><a href="#"><img src="images/footer-support-img4.png" alt="support-img"></a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-
-                <div class="footer__support-block">
-                    <div class="footer__menu">
-                        <ul>
-                            <li><a href="#">О проекте</a></li>
-                            <li><a href="#">Контакты</a></li>
-                            <li><a href="#">Партнеры</a></li>
-                            <li><a href="#">RSS</a></li>
-                            <li><a href="#">Правила использования информации</a></li>
-                        </ul>
+                    <div class="footer-block__item">
+                        <div class="footer__social-links">
+                            <a href="www.facebook.com" class="logo-links__facebook"><i class="pe-so-facebook"></i></a>
+                            <a href="www.vk.ru" class="logo-links__vk"><i class="pe-so-vk"></i></a>
+                        </div>
+                        <div class="footer__title">Категория информации<span>18+</span></div>
                     </div>
-                    <div class="footer__supports">
-                        <span>При поддержке:</span>
-                        <ul>
-                            <li><a href="#"><img src="images/footer-support-img.png" alt="support-img"></a></li>
-                            <li><a href="#"><img src="images/footer-support-img2.png" alt="support-img"></a></li>
-                            <li><a href="#"><img src="images/footer-support-img3.png" alt="support-img"></a></li>
-                            <li><a href="#"><img src="images/footer-support-img4.png" alt="support-img"></a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__title">Категория информации<span>18+</span></div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <script src="js/js.js"></script>
+        <script src="js/js.js"></script>
 </body>
 
 </html>
